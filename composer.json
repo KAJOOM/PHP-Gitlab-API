@@ -1,0 +1,12 @@
+{
+    "require": {
+        "m4tthumphrey/php-gitlab-api": "^11.12",
+        "guzzlehttp/guzzle": "^7.8",
+        "http-interop/http-factory-guzzle": "^1.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
