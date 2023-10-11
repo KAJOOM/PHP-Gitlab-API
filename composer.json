@@ -1,11 +1,11 @@
 {
-    "name": "kjm/gitlab-api",
+    "name": "kajoom/gitlab-api",
     "description": "PHP command-line tool for Gitlab API.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Kjm\\GitlabApi\\": "src/"
+            "Kajoom\\GitlabApi\\": "src/"
         }
     },
     "authors": [

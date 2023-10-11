@@ -3,7 +3,7 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Kjm\GitlabApi\Commands\Play;
+use Kajoom\GitlabApi\Commands\Play;
 use Symfony\Component\Console\Application;
 
 $command = new Play();
