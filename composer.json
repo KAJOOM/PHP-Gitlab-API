@@ -16,11 +16,11 @@
     ],
     "minimum-stability": "stable",
     "require": {
-    "php": "^7.4|^8.0|^8.1|^8.2",
+    "php": "^7.4|^8.0",
         "m4tthumphrey/php-gitlab-api": "^11.12",
         "guzzlehttp/guzzle": "^7.8",
         "http-interop/http-factory-guzzle": "^1.2",
-        "symfony/console": "^5.4"
+        "symfony/console": "^5.0|^6.0"
     },
     "bin": [
         "bin/gitlabcmd"
