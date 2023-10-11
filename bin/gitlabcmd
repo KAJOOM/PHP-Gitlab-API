@@ -1,14 +1,24 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
+$root = dirname(__DIR__);
+
+// TODO: Since Composer 2.2 : The $_composer_autoload_path global variable.
+if (! is_file(sprintf('%s/vendor/autoload.php', $root))) {
+    $root = dirname(__DIR__, 4);
+}
+
+require sprintf('%s/vendor/autoload.php', $root);
 
 use Kajoom\GitlabApi\Commands\Play;
 use Symfony\Component\Console\Application;
+
+// Config.
+$singleCommand = false;
 
 $command = new Play();
 $application = new Application();
 
 $application->add($command);
-$application->setDefaultCommand($command->getName());
+if ($singleCommand) $application->setDefaultCommand($command->getName());
 $application->run();
