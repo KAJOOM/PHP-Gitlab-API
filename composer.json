@@ -1,10 +1,30 @@
 {
+    "name": "kajoom/gitlab-api",
+    "description": "PHP command-line tool for Gitlab API.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kajoom\\GitlabApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "webmarka",
+            "email": "uhpbs568@duck.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
+    "php": "^7.4|^8.0|^8.1|^8.2",
         "m4tthumphrey/php-gitlab-api": "^11.12",
         "guzzlehttp/guzzle": "^7.8",
         "http-interop/http-factory-guzzle": "^1.2",
         "symfony/console": "^5.4"
     },
+    "bin": [
+        "bin/gitlabcmd"
+    ],
     "config": {
         "allow-plugins": {
             "php-http/discovery": true

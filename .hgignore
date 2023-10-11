@@ -1,3 +1,4 @@
 syntax: glob
 *.notes.sh
 vendor/
+composer.lock
